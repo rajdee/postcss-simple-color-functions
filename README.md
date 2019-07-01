@@ -15,14 +15,14 @@
 
 ```css
 .foo {
-    color: color: #00a381;
+    color: #00a381;
     background-color: #71fad3;
 }
 ```
 
 ```css
 .foo {
-    color: color: colors(#23bc98 rgb);
+    color: colors(#23bc98 rgb);
 }
 ```
 
@@ -34,7 +34,7 @@
 
 ```css
 .foo {
-    color: color: colors(#23bc98 brightness(20%));
+    color: colors(#23bc98 brightness(20%));
     background-color: colors(#23bc98 brightness(-20%));
 }
 ```
