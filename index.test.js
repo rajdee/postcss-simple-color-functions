@@ -54,12 +54,12 @@ it('should return converted color from hex to rgb', () => {
 it('should return converted color with alpha chanel', () => {
     return run(
         '.test{ background: #bbb; color: colors(#23bc98 alpha(.5) rgb);} a { background: #bbb; }',
-        '.test{ background: #bbb; color: rgba(35,188,152,0.5);} a { background: #bbb; }',
+        '.test{ background: #bbb; color: rgba(35,188,152,.5);} a { background: #bbb; }',
         { }
     );
 });
 
-it('should return brighten color by brightness', () => {
+it('should return brighten color by brightness in percent', () => {
     return run(
         '.test{ background: #bbb; color: colors(#23bc98 brightness(20%));} a { background: #bbb; }',
         '.test{ background: #bbb; color: #58e3bd;} a { background: #bbb; }',
@@ -67,9 +67,25 @@ it('should return brighten color by brightness', () => {
     );
 });
 
-it('should return darken color by brightness', () => {
+it('should return darken color by brightness in percent', () => {
     return run(
         '.test{ background: #bbb; color: colors(#23bc98 brightness(-20%));} a { background: #bbb; }',
+        '.test{ background: #bbb; color: #009675;} a { background: #bbb; }',
+        { }
+    );
+});
+
+it('should return brighten color by brightness', () => {
+    return run(
+        '.test{ background: #bbb; color: colors(#23bc98 brightness(0.2));} a { background: #bbb; }',
+        '.test{ background: #bbb; color: #58e3bd;} a { background: #bbb; }',
+        { }
+    );
+});
+
+it('should return darken color by brightness', () => {
+    return run(
+        '.test{ background: #bbb; color: colors(#23bc98 brightness(-0.2));} a { background: #bbb; }',
         '.test{ background: #bbb; color: #009675;} a { background: #bbb; }',
         { }
     );

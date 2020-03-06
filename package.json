@@ -1,6 +1,6 @@
 {
   "name": "postcss-simple-color-functions",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "PostCSS plugin for manipulating color transformations",
   "keywords": [
     "postcss",
@@ -20,23 +20,23 @@
   },
   "homepage": "https://github.com/rajdee/postcss-simple-color-functions",
   "dependencies": {
-    "postcss": "^7.0.6",
-    "postcss-value-parser": "^4.0.0",
-    "simple-color-functions": "^0.3.0"
+    "postcss": "^7.0.27",
+    "postcss-value-parser": "^4.0.3",
+    "simple-color-functions": "^0.5.1"
   },
   "devDependencies": {
-    "@logux/eslint-config": "^27.0.0",
-    "eslint": "^5.10.0",
-    "eslint-config-postcss": "^3.0.7",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-es5": "^1.3.1",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jest": "^22.1.2",
-    "eslint-plugin-node": "^8.0.0",
-    "eslint-plugin-promise": "^4.0.1",
+    "@logux/eslint-config": "^36.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-postcss": "^4.0.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-es5": "^1.5.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^23.8.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-security": "^1.4.0",
-    "eslint-plugin-standard": "^4.0.0",
-    "jest": "^23.6.0"
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^25.1.0"
   },
   "eslintConfig": {
     "extends": "eslint-config-postcss/es5"
