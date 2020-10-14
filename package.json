@@ -1,47 +1,52 @@
 {
-  "name": "postcss-simple-color-functions",
-  "version": "0.2.1",
-  "description": "PostCSS plugin for manipulating color transformations",
-  "keywords": [
-    "postcss",
-    "css",
-    "postcss-plugin",
-    "color",
-    "transformation"
-  ],
-  "scripts": {
-    "test": "jest && eslint *.js"
-  },
-  "author": "Ruslan Abdullaev <skarlatin@mail.ru>",
-  "license": "MIT",
-  "repository": "rajdee/postcss-simple-color-functions",
-  "bugs": {
-    "url": "https://github.com/rajdee/postcss-simple-color-functions/issues"
-  },
-  "homepage": "https://github.com/rajdee/postcss-simple-color-functions",
-  "dependencies": {
-    "postcss": "^8.1.1",
-    "postcss-value-parser": "^4.1.0",
-    "simple-color-functions": "^0.5.1"
-  },
-  "devDependencies": {
-    "@logux/eslint-config": "^40.0.5",
-    "eslint": "^7.11.0",
-    "eslint-config-postcss": "^4.0.0",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-es5": "^1.5.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jest": "^24.1.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-security": "^1.4.0",
-    "eslint-plugin-standard": "^4.0.1",
-    "jest": "^26.5.3"
-  },
-  "eslintConfig": {
-    "extends": "eslint-config-postcss/es5"
-  },
-  "jest": {
-    "testEnvironment": "node"
-  }
+    "name": "postcss-simple-color-functions",
+    "version": "0.3.0",
+    "description": "PostCSS plugin for manipulating color transformations",
+    "keywords": [
+        "postcss",
+        "css",
+        "postcss-plugin",
+        "color",
+        "transformation"
+    ],
+    "scripts": {
+        "test": "jest && eslint *.js",
+        "publish": "npx clean-publish"
+    },
+    "author": "Ruslan Abdullaev <skarlatin@mail.ru>",
+    "license": "MIT",
+    "repository": "rajdee/postcss-simple-color-functions",
+    "bugs": {
+        "url": "https://github.com/rajdee/postcss-simple-color-functions/issues"
+    },
+    "homepage": "https://github.com/rajdee/postcss-simple-color-functions",
+    "dependencies": {
+        "postcss-value-parser": "^4.1.0",
+        "simple-color-functions": "^0.5.1"
+    },
+    "devDependencies": {
+        "@logux/eslint-config": "^40.0.5",
+        "clean-publish": "^1.1.8",
+        "eslint": "^7.11.0",
+        "eslint-config-postcss": "^4.0.0",
+        "eslint-config-standard": "^14.1.1",
+        "eslint-plugin-es5": "^1.5.0",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-jest": "^24.1.0",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^4.2.1",
+        "eslint-plugin-security": "^1.4.0",
+        "eslint-plugin-standard": "^4.0.1",
+        "jest": "^26.5.3",
+        "postcss": "^8.1.1"
+    },
+    "peerDependencies": {
+        "postcss": "^8.0.0"
+    },
+    "eslintConfig": {
+        "extends": "eslint-config-postcss/es5"
+    },
+    "jest": {
+        "testEnvironment": "node"
+    }
 }

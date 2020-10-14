@@ -4,7 +4,7 @@ const plugin = require('./');
 
 function run(input, output, opts) {
     return postcss([ plugin(opts) ])
-        .process(input)
+        .process(input, { from: undefined })
         .then(function(result) {
             expect(result.css).toEqual(output);
             expect(result.warnings()).toHaveLength(0);
