@@ -46,6 +46,17 @@
 }
 ```
 
+## Installation
+
+Add [PostCSS Simple Color Functions] to your build tool.
+```sh
+npm install postcss postcss-simple-color-functions --save-dev
+```
+or
+```sh
+yarn add postcss postcss-simple-color-functions --dev
+```
+
 ## Usage
 
 ```js
